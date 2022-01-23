@@ -1,3 +1,5 @@
+// By AureumApes
+
 package commands
 
 import (
