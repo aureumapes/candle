@@ -11,5 +11,11 @@ func Execute(command string) {
 		Set(command)
 	} else if strings.HasPrefix(command, "add") {
 		Add(command)
+	}else if strings.HasPrefix(command, "sub") {
+		Sub(command)
+	}else if strings.HasPrefix(command, "mult") {
+		Mult(command)
+	}else if strings.HasPrefix(command, "div") {
+		Div(command)
 	}
 }

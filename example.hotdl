@@ -1,4 +1,10 @@
 set a to 10
 say a
-add 10 to a
+add 10 a
+say a
+sub 5 a
+say a
+mult 10 a
+say a
+div 5 a
 say a
