@@ -1,10 +1,4 @@
-set a to 10
+set a to 8
 say a
-add 10 a
-say a
-sub 5 a
-say a
-mult 10 a
-say a
-div 5 a
+if a == 8 set a to 10
 say a

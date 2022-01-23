@@ -13,11 +13,17 @@ func Execute(command string) {
 		Set(command)
 	} else if strings.HasPrefix(command, "add") {
 		Add(command)
-	}else if strings.HasPrefix(command, "sub") {
+	} else if strings.HasPrefix(command, "sub") {
 		Sub(command)
-	}else if strings.HasPrefix(command, "mult") {
+	} else if strings.HasPrefix(command, "mult") {
 		Mult(command)
-	}else if strings.HasPrefix(command, "div") {
+	} else if strings.HasPrefix(command, "div") {
 		Div(command)
+	} else if strings.HasPrefix(command, "input") {
+		Input(command)
+	} else if strings.HasPrefix(command, "sqrt") {
+		Sqrt(command)
+	} else if strings.HasPrefix(command, "if") {
+		If(command)
 	}
 }

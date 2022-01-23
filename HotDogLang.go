@@ -2,13 +2,16 @@
 package main
 
 import (
+	"HotDogLang/commands"
 	"bufio"
 	"fmt"
 	"os"
+	"strconv"
+	"strings"
 )
-import "./commands"
 
 func main() {
+	var programm = make(map[int]string)
 	args := os.Args[1:]
 	readFile, err := os.Open(args[0])
 	if err != nil {
@@ -18,8 +21,20 @@ func main() {
 
 	fileScanner.Split(bufio.ScanLines)
 
+	position := 0
 	for fileScanner.Scan() {
-		commands.Execute(fileScanner.Text())
+		programm[position] = fileScanner.Text()
+		position++
 	}
 	readFile.Close()
+	pos := 0
+	for pos < len(programm) {
+		if strings.HasPrefix(programm[pos], "goto") {
+			newPos, _ := strconv.Atoi(strings.Split(programm[pos], " ")[1])
+			pos = newPos - 1
+		} else {
+			commands.Execute(programm[pos])
+			pos++
+		}
+	}
 }
