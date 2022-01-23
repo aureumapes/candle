@@ -2,7 +2,6 @@ package commands
 
 import (
 	"fmt"
-	"log"
 	"strings"
 )
 
@@ -12,6 +11,6 @@ func Say(command string) {
 	if ok {
 		fmt.Println(variables[splitedCommand[1]])
 	} else {
-		log.Fatal(splitedCommand[1] + " is not declared!")
+		fmt.Println(splitedCommand[1] + ": Unknown Variable")
 	}
 }

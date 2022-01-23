@@ -9,5 +9,7 @@ func Execute(command string) {
 		Say(command)
 	} else if strings.HasPrefix(command, "set") {
 		Set(command)
+	} else if strings.HasPrefix(command, "add") {
+		Add(command)
 	}
 }

@@ -1,2 +1,4 @@
 set a to 10
 say a
+add 10 to a
+say a

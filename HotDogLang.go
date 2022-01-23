@@ -5,7 +5,6 @@ import (
 	"fmt"
 	"os"
 )
-import _ "./commands"
 import "./commands"
 
 func main() {
