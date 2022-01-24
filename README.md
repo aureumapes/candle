@@ -6,7 +6,7 @@ An interpreted Script-Language based on AureumScript
 [Tilo Behnke](https://github.com/TUBS1001)
 
 # Syntax
-`goto <LINE_NUMBER>` - jump back to Line given<br>
+`goto <LINE_NUMBER>` - Jump back/forward to Line given<br>
 `set <VARIABLE_NAME> to <VALUE>` - Create a new Variable with the give Name and the Value<br>
 `add <VALUE> <VARIABLE_NAME>` - Add a value to a variable and set the Variable to the Result<br>
 `sub <VALUE> <VARIABLE_NAME>` - Subtract a value from a variable and set the Variable to the Result<br>
