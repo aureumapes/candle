@@ -1,5 +1,3 @@
-// By AureumApes
-
-module HotDogLang/commands
+module HotdogLang/commands
 
 go 1.17

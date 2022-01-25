@@ -2,7 +2,7 @@
 package main
 
 import (
-	"HotDogLang/commands"
+	"HotdogLang/commands"
 	"bufio"
 	"fmt"
 	"os"

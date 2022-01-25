@@ -1,4 +1,0 @@
-set a to 8
-say a
-if a == 8 set a to 10
-say a
