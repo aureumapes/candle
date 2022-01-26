@@ -2,7 +2,7 @@
 An interpreted Script-Language based on AureumScript
 
 # Authors
-[Elli Herrmann](https://github.com/AureumApes)
+[AureumApes](https://github.com/AureumApes)<br>
 [Tilo Behnke](https://github.com/TUBS1001)
 
 # Syntax
