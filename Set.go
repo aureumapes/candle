@@ -1,6 +1,6 @@
 // By AureumApes
 
-package commands
+package main
 
 import (
 	"strconv"

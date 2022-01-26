@@ -1,5 +1,5 @@
 // By AureumApes
 
-package commands
+package main
 
 var variables = make(map[string]interface{})

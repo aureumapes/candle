@@ -1,0 +1,4 @@
+set a to 0
+say a
+add 1 a
+if a != 10 goto 1

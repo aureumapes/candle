@@ -1,6 +1,6 @@
 // By TUBS1001
 
-package commands
+package main
 
 import (
 	"bufio"
@@ -8,7 +8,7 @@ import (
 	"strings"
 )
 
-func Input(command string){
+func Input(command string) {
 	splitedCmd := strings.Split(command, " ")
 
 	reader := bufio.NewReader(os.Stdin)
