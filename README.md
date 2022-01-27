@@ -1,4 +1,4 @@
-# HotdogLang
+# Candle
 An interpreted Script-Language based on AureumScript
 
 # Authors
