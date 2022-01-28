@@ -7,6 +7,7 @@ import (
 	"strings"
 )
 
+var variables = make(map[string]interface{})
 var program = make(map[int]string)
 var pos = 0
 
