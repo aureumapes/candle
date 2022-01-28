@@ -33,6 +33,7 @@ Candle has only a few instructions, which you can use in your program:
   ```
   # this is a comment
   # this is allowed
+  // and this is also allowed
   say x
   # this is another comment
   say x # this is invalid
