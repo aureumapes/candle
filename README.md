@@ -31,9 +31,18 @@ Candle has only a few instructions, which you can use in your program:
 
 
 ## Examples
+### 1 to 10 Counter
+```
+set a to 0
+add 1 a
+say a
+if a != 11 goto 2
+```
 
 ## Contributors
 
 - [AureumApes](https://github.com/AureumApes)
 
 - [Tilo Behnke](https://github.com/TUBS1001)
+
+- [SomehowPatrick](https://github.com/SomehowPatrick)
