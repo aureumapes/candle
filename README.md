@@ -1,18 +1,39 @@
 # Candle
-An interpreted Script-Language based on AureumScript
 
-# Authors
-[AureumApes](https://github.com/AureumApes)<br>
-[Tilo Behnke](https://github.com/TUBS1001)
+**Candle** is an interpreted scripting language designed to work mostly with math and numbers. *It is not feature, nor Turing complete and is still in alpha version. You should not use it in production!*
 
-# Syntax
-`goto <LINE_NUMBER>` - Jump back/forward to Line given<br>
-`set <VARIABLE_NAME> to <VALUE>` - Create a new Variable with the give Name and the Value<br>
-`add <VALUE> <VARIABLE_NAME>` - Add a value to a variable and set the Variable to the Result<br>
-`sub <VALUE> <VARIABLE_NAME>` - Subtract a value from a variable and set the Variable to the Result<br>
-`mult <VALUE> <VARIABLE_NAME>` - Multiply a value with a variable and set the Variable to the Result<br>
-`div <VALUE> <VARIABLE_NAME>` - Divide a value with a variable and set the Variable to the Result<br>
-`sqrt <VARIALE_NAME> <VALUE/VARIABLE>` - Get the Sqauare Root of the Value and set the Variable to the result<br>
-`input <VARIABLE_NAME>` - Set the Variable to the Users Input<br>
-`say <VARIABLE>` - Print the Value of the Variable in the Console<br>
-`if <VARIABLE_NAME> !=/==/>=/<= <VARIABLE> <COMMAND>` - Execute the Command if the Variabe is matching
+---
+
+## Instructions
+
+Candle has only a few instructions, which you can use in your program:
+
+- `goto <LINE_NUMBER>` Jumps to a line and performs the action in that line
+
+- `set <VARIABLE_NAME> to <VALUE>` Creates a new variable if a name and sets a default number to it
+
+- `add <VALUE> <VARIABLE_NAME>` Adds a number to a variable
+
+- `sub <VALUE> <VARIABLE_NAME>` Subtracts a number from a variable
+
+- `mult <VALUE> <VARIABLE_NAME>` Multiplies a variable by a number
+
+- `div <VALUE> <VARIABLE_NAME>` Divides a variable by a number
+
+- `sqrt <VARIABLE_NAME> <VALUE/VARIABLE>` Gets the square root of a variable and sets the variable to the result
+
+- `input <VARIABLE_NAME>` Sets the variable to the input from **stdin**
+
+- `say <VARIABLE>` Prints the value of a variable to the screen
+
+- `if <VARIABLE_NAME> !=/==/>=/<= <VARIABLE> <COMMAND>` Executes the command if the condition is matched
+
+
+
+## Examples
+
+## Contributors
+
+- [AureumApes](https://github.com/AureumApes)
+
+- [Tilo Behnke](https://github.com/TUBS1001)
