@@ -7,5 +7,5 @@ say a
 # adds 1 to a
 add 1 a
 
-# checks if the variable is smaller than 11
-if a < 11 goto 1
+# checks if the variable is smaller than 10 or equal to 10
+if a <= 10 goto 1
