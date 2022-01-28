@@ -1,5 +1,3 @@
-// By AureumApes
-
 package main
 
 import (
@@ -7,6 +5,7 @@ import (
 	"strings"
 )
 
+// Set sets a variable to a value
 func Set(command string) {
 	splitCmd := strings.Split(command, " ")
 	if splitCmd[2] == "to" {
@@ -19,6 +18,7 @@ func Set(command string) {
 	}
 }
 
+// isNumeric checks if a string is numeric
 func isNumeric(s string) bool {
 	_, err := strconv.ParseFloat(s, 64)
 	return err == nil

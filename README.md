@@ -2,8 +2,6 @@
 
 **Candle** is an interpreted scripting language designed to work mostly with math and numbers. *It is not feature, nor Turing complete and is still in alpha version. You should not use it in production!*
 
-
-
 ## Instructions
 
 Candle has only a few instructions, which you can use in your program:
@@ -28,16 +26,21 @@ Candle has only a few instructions, which you can use in your program:
 
 - `if <VARIABLE_NAME> !=/==/>=/<= <NUMBER> <COMMAND>` Executes the command if the condition is matched
 
-
+- Comments are only allowed in a line, you can use comments in new lines like this
+  
+  ```
+  # this is a comment
+  # this is allowed
+  say x
+  # this is another comment
+  say x # this is invalid
+  ```
+  
+  
 
 ## Examples
-### 1 to 10 Counter
-```
-set a to 0
-add 1 a
-say a
-if a != 11 goto 2
-```
+
+You can find examples in the `examples`  folder in the repository.
 
 ## Contributors
 

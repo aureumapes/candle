@@ -1,5 +1,3 @@
-// By AureumApes
-
 package main
 
 import (
@@ -7,6 +5,7 @@ import (
 	"strings"
 )
 
+// Execute parses and executes an instruction
 func Execute(command string) {
 	if strings.HasPrefix(command, "goto") {
 		newPos, _ := strconv.Atoi(strings.Split(command, " ")[1])
@@ -20,7 +19,7 @@ func Execute(command string) {
 		Add(command)
 	} else if strings.HasPrefix(command, "sub") {
 		Sub(command)
-	} else if strings.HasPrefix(command, "mult") {
+	} else if strings.HasPrefix(command, "mul") {
 		Mul(command)
 	} else if strings.HasPrefix(command, "div") {
 		Div(command)

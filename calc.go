@@ -1,5 +1,3 @@
-// By AureumApes
-
 package main
 
 import (
@@ -10,6 +8,9 @@ import (
 	"strings"
 )
 
+var floatType = reflect.TypeOf(float64(0))
+
+// Add adds a number to a variable
 func Add(command string) {
 	splitCmd := strings.Split(command, " ")
 	variableOld, ok := variables[splitCmd[2]]
@@ -22,6 +23,7 @@ func Add(command string) {
 	}
 }
 
+// Sub subtracts a number from a variable
 func Sub(command string) {
 	splitCmd := strings.Split(command, " ")
 	variableOld, ok := variables[splitCmd[2]]
@@ -35,6 +37,7 @@ func Sub(command string) {
 	}
 }
 
+// Mul multiplies the value of the variable by a number
 func Mul(command string) {
 	splitCmd := strings.Split(command, " ")
 	variableOld, ok := variables[splitCmd[2]]
@@ -48,6 +51,7 @@ func Mul(command string) {
 	}
 }
 
+// Div divides the variable by a number
 func Div(command string) {
 	splitCmd := strings.Split(command, " ")
 	variableOld, ok := variables[splitCmd[2]]
@@ -60,6 +64,7 @@ func Div(command string) {
 	}
 }
 
+// Sqrt gets the square root of a variable and sets it to the variable
 func Sqrt(command string) {
 	splitCmd := strings.Split(command, " ")
 	_, ok := variables[splitCmd[1]]
@@ -73,8 +78,7 @@ func Sqrt(command string) {
 	}
 }
 
-var floatType = reflect.TypeOf(float64(0))
-
+// getFloat converts to float
 func getFloat(unk interface{}) float64 {
 	v := reflect.ValueOf(unk)
 	v = reflect.Indirect(v)

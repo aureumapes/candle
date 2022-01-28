@@ -1,4 +1,0 @@
-set a to 0
-say a
-add 1 a
-if a != 11 goto 1

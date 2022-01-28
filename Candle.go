@@ -1,15 +1,17 @@
-// By AureumApes
 package main
 
 import (
 	"bufio"
 	"fmt"
 	"os"
+	"strings"
 )
 
+var variables = make(map[string]interface{})
 var program = make(map[int]string)
 var pos = 0
 
+// main function
 func main() {
 	args := os.Args[1:]
 	if len(args) < 1 {
@@ -25,8 +27,13 @@ func main() {
 
 	position := 0
 	for fileScanner.Scan() {
-		program[position] = fileScanner.Text()
-		position++
+		text := fileScanner.Text()
+		if strings.HasPrefix(text, "#") || text == "" {
+			continue
+		} else {
+			program[position] = fileScanner.Text()
+			position++
+		}
 	}
 	err = readFile.Close()
 	if err != nil {
