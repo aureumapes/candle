@@ -1,4 +1,4 @@
-# sets the value 0 to a
+// sets the value of a to 0
 set a to 0
 
 # prints the variable a to the console

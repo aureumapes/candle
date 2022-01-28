@@ -27,7 +27,7 @@ func main() {
 	position := 0
 	for fileScanner.Scan() {
 		text := fileScanner.Text()
-		if strings.HasPrefix(text, "#") || text == "" {
+		if strings.HasPrefix(text, "#") || text == "" || strings.HasPrefix(text, "//") {
 			continue
 		} else {
 			program[position] = fileScanner.Text()
