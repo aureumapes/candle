@@ -1,0 +1,11 @@
+# sets the value 0 to a
+set a to 0
+
+# prints the variable a to the console
+say a
+
+# adds 1 to a
+add 1 a
+
+# checks if the variable is smaller than 11
+if a < 11 goto 1

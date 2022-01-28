@@ -9,7 +9,8 @@ func Execute(command string) {
 	if strings.HasPrefix(command, "goto") {
 		newPos, _ := strconv.Atoi(strings.Split(command, " ")[1])
 		pos = newPos - 1
-	} else if strings.HasPrefix(command, "say") {
+	}
+	if strings.HasPrefix(command, "say") {
 		Say(command)
 	} else if strings.HasPrefix(command, "set") {
 		Set(command)

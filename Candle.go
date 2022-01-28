@@ -4,6 +4,7 @@ import (
 	"bufio"
 	"fmt"
 	"os"
+	"strings"
 )
 
 var program = make(map[int]string)
@@ -24,8 +25,13 @@ func main() {
 
 	position := 0
 	for fileScanner.Scan() {
-		program[position] = fileScanner.Text()
-		position++
+		text := fileScanner.Text()
+		if strings.HasPrefix(text, "#") || text == "" {
+			continue
+		} else {
+			program[position] = fileScanner.Text()
+			position++
+		}
 	}
 	err = readFile.Close()
 	if err != nil {
