@@ -26,7 +26,7 @@ Candle has only a few instructions, which you can use in your program:
 
 - `say <VARIABLE>` Prints the value of a variable to the screen
 
-- `if <VARIABLE_NAME> !=/==/>=/<= <VARIABLE> <COMMAND>` Executes the command if the condition is matched
+- `if <VARIABLE_NAME> !=/==/>=/<= <NUMBER> <COMMAND>` Executes the command if the condition is matched
 
 
 
