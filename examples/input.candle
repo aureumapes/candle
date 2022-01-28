@@ -1,3 +1,8 @@
+# sets x to a value
 set x to 0
+
+# gets a new value
 input x
+
+# print x to the console
 say x

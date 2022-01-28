@@ -1,0 +1,11 @@
+# sets y to 10
+set y to 10
+
+# prints y
+say y
+
+# exits the program
+exit
+
+# not executed
+say y

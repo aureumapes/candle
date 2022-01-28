@@ -22,7 +22,6 @@ func main() {
 		fmt.Println(err)
 	}
 	fileScanner := bufio.NewScanner(readFile)
-
 	fileScanner.Split(bufio.ScanLines)
 
 	position := 0
