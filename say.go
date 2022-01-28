@@ -5,6 +5,7 @@ import (
 	"strings"
 )
 
+// Say prints a variable to the console
 func Say(command string) {
 	splitCmd := strings.Split(command, " ")
 	_, ok := variables[splitCmd[1]]

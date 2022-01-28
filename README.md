@@ -26,6 +26,18 @@ Candle has only a few instructions, which you can use in your program:
 
 - `if <VARIABLE_NAME> !=/==/>=/<= <NUMBER> <COMMAND>` Executes the command if the condition is matched
 
+- Comments are only allowed in a line, you can use comments in new lines like this
+  
+  ```
+  # this is a comment
+  # this is allowed
+  say x
+  # this is another comment
+  say x # this is invalid
+  ```
+  
+  
+
 ## Examples
 
 You can find examples in the `examples`  folder in the repository.

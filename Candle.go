@@ -11,6 +11,7 @@ var variables = make(map[string]interface{})
 var program = make(map[int]string)
 var pos = 0
 
+// main function
 func main() {
 	args := os.Args[1:]
 	if len(args) < 1 {

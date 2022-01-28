@@ -5,6 +5,7 @@ import (
 	"strings"
 )
 
+// Execute parses and executes an instruction
 func Execute(command string) {
 	if strings.HasPrefix(command, "goto") {
 		newPos, _ := strconv.Atoi(strings.Split(command, " ")[1])

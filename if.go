@@ -5,6 +5,7 @@ import (
 	"strings"
 )
 
+// If checks the if conditions
 func If(command string) {
 	splitCmd := strings.Split(command, " ")
 	variable := getFloat(variables[splitCmd[1]])
