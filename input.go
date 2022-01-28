@@ -9,10 +9,10 @@ import (
 )
 
 func Input(command string) {
-	splitedCmd := strings.Split(command, " ")
+	splitCmd := strings.Split(command, " ")
 
 	reader := bufio.NewReader(os.Stdin)
 
 	text, _ := reader.ReadString('\n')
-	variables[splitedCmd[1]] = text
+	variables[splitCmd[1]] = text
 }

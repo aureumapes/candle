@@ -21,7 +21,7 @@ func Execute(command string) {
 	} else if strings.HasPrefix(command, "sub") {
 		Sub(command)
 	} else if strings.HasPrefix(command, "mult") {
-		Mult(command)
+		Mul(command)
 	} else if strings.HasPrefix(command, "div") {
 		Div(command)
 	} else if strings.HasPrefix(command, "input") {

@@ -7,11 +7,14 @@ import (
 	"os"
 )
 
-var programm = make(map[int]string)
+var program = make(map[int]string)
 var pos = 0
 
 func main() {
 	args := os.Args[1:]
+	if len(args) < 1 {
+		panic("Please add a file as an argument!")
+	}
 	readFile, err := os.Open(args[0])
 	if err != nil {
 		fmt.Println(err)
@@ -22,12 +25,15 @@ func main() {
 
 	position := 0
 	for fileScanner.Scan() {
-		programm[position] = fileScanner.Text()
+		program[position] = fileScanner.Text()
 		position++
 	}
-	readFile.Close()
-	for pos < len(programm) {
-		Execute(programm[pos])
+	err = readFile.Close()
+	if err != nil {
+		return
+	}
+	for pos < len(program) {
+		Execute(program[pos])
 		pos++
 	}
 }
