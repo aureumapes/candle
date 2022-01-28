@@ -1,5 +1,3 @@
-// By AureumApes
-
 package main
 
 import (

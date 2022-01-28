@@ -1,5 +1,3 @@
-// By TUBS1001
-
 package main
 
 import (
