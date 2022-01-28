@@ -2,7 +2,7 @@
 
 **Candle** is an interpreted scripting language designed to work mostly with math and numbers. *It is not feature, nor Turing complete and is still in alpha version. You should not use it in production!*
 
----
+
 
 ## Instructions
 
