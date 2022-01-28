@@ -24,19 +24,20 @@ Candle has only a few instructions, which you can use in your program:
 
 - `say <VARIABLE>` Prints the value of a variable to the screen
 
-- `if <VARIABLE_NAME> !=/==/>=/<= <NUMBER> <COMMAND>` Executes the command if the condition is matched
+- `if <VARIABLE_NAME> !=/==/>=/<=/>/< <NUMBER> <COMMAND>` Executes the command if the condition is matched
+
+- `exit` Exits the program
 
 - Comments are only allowed in a line, you can use comments in new lines like this
   
   ```
   # this is a comment
   # this is allowed
+  // and this is also allowed
   say x
   # this is another comment
   say x # this is invalid
   ```
-  
-  
 
 ## Examples
 

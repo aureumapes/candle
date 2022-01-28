@@ -1,8 +1,0 @@
-# Create an Variable called x
-set x to 0
-
-# Wait for the USer Input
-input x
-
-# Print the Users Input
-say x

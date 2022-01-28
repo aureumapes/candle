@@ -22,13 +22,12 @@ func main() {
 		fmt.Println(err)
 	}
 	fileScanner := bufio.NewScanner(readFile)
-
 	fileScanner.Split(bufio.ScanLines)
 
 	position := 0
 	for fileScanner.Scan() {
 		text := fileScanner.Text()
-		if strings.HasPrefix(text, "#") || text == "" {
+		if strings.HasPrefix(text, "#") || text == "" || strings.HasPrefix(text, "//") {
 			continue
 		} else {
 			program[position] = fileScanner.Text()

@@ -10,8 +10,7 @@ func Execute(command string) {
 	if strings.HasPrefix(command, "goto") {
 		newPos, _ := strconv.Atoi(strings.Split(command, " ")[1])
 		pos = newPos - 1
-	}
-	if strings.HasPrefix(command, "say") {
+	} else if strings.HasPrefix(command, "say") {
 		Say(command)
 	} else if strings.HasPrefix(command, "set") {
 		Set(command)
@@ -29,5 +28,7 @@ func Execute(command string) {
 		Sqrt(command)
 	} else if strings.HasPrefix(command, "if") {
 		If(command)
+	} else if strings.HasPrefix(command, "exit") {
+		Exit()
 	}
 }
