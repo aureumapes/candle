@@ -41,7 +41,7 @@ Candle has only a few instructions, which you can use in your program:
 
 ## Examples
 
-You can find examples in the `examples`  folder in the repository.
+You can find examples in the [examples](examples/)  folder in the repository.
 
 ## Contributors
 
