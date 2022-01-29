@@ -22,7 +22,7 @@ Candle has only a few instructions, which you can use in your program:
 
 - `ask <VARIABLE_NAME>` Asks the console to insert a number and sets the variable to the result
 
-- `say <VARIABLE>` Prints the value of a variable to the screen
+- `say <VARIABLE> <message>` Asks the user for a number with a message and sets the variable to the result
 
 - `if <VARIABLE_NAME> !=/==/>=/<=/>/< <NUMBER> <COMMAND>` Executes the command if the condition is matched
 

@@ -2,7 +2,7 @@
 set x to 0
 
 # asks the user for a number
-ask x
+ask x What should x equal now?
 
 # prints x
 say x
