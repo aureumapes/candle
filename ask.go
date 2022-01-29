@@ -7,8 +7,8 @@ import (
 	"strings"
 )
 
-// Input gets input from the console and stores it in
-func Input(command string) {
+// Ask gets input from the console and stores it in
+func Ask(command string) {
 	splitCmd := strings.Split(command, " ")
 
 	fmt.Println("Insert your value:")

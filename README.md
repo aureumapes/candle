@@ -20,7 +20,7 @@ Candle has only a few instructions, which you can use in your program:
 
 - `sqrt <VARIABLE_NAME> <VALUE/VARIABLE>` Gets the square root of a variable and sets the variable to the result
 
-- `input <VARIABLE_NAME>` Sets the variable to the input from **stdin**
+- `ask <VARIABLE_NAME>` Asks the console to insert a number and sets the variable to the result
 
 - `say <VARIABLE>` Prints the value of a variable to the screen
 

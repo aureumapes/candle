@@ -1,0 +1,8 @@
+# sets x to 0
+set x to 0
+
+# asks the user for a number
+ask x
+
+# prints x
+say x
