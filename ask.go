@@ -24,8 +24,8 @@ func Ask(command string) {
 	reader := bufio.NewReader(os.Stdin)
 
 	text, _ := reader.ReadString('\n')
-	if !isNumeric(text) {
-		panic(fmt.Sprintf("%s is not a number", text))
-	}
+	//if !isNumeric(text) {
+	//	panic(fmt.Sprintf("%s is not a number", text))
+	//}
 	variables[splitCmd[1]] = text
 }
