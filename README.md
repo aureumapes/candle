@@ -49,4 +49,4 @@ You can find examples in the [examples](examples/)  folder in the repository.
 
 - [Tilo Behnke](https://github.com/TUBS1001) - Language Design
 
-- [SomehowPatrick](https://github.com/SomehowPatrick) - Side Dev
+- [SomehowPatrick](https://github.com/SomehowPatrick) - Main Dev
