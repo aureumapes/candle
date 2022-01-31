@@ -45,8 +45,8 @@ You can find examples in the [examples](examples/)  folder in the repository.
 
 ## Contributors
 
-- [AureumApes](https://github.com/AureumApes) - Main Dev
+- [AureumApes](https://github.com/AureumApes)
 
-- [Tilo Behnke](https://github.com/TUBS1001) - Language Design
+- [Tilo Behnke](https://github.com/TUBS1001)
 
-- [SomehowPatrick](https://github.com/SomehowPatrick) - Main Dev
+- [SomehowPatrick](https://github.com/SomehowPatrick)
