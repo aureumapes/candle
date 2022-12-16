@@ -1,5 +1,5 @@
-# builds for windows
-env GOOS=linux GOARCH=amd64 go build -o build/candle
-
 # builds for linux
-env GOOS=windows GOARCH=amd64 go build -o build/candle.exe
+GOOS=linux go build -o build/candle-linux
+
+# builds for win
+GOOS=windows go build -o build/candle-windows.exe
