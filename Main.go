@@ -50,9 +50,14 @@ func Execute(rawCommand string) {
 	case "say":
 		cmd.Say(command[1:], vars)
 		break
+	case "sayln":
+		cmd.Sayln(command[1:], vars)
+		break
 	case "set":
 		vars = cmd.Set(command[1:], vars)
 		break
-	case
+	case "ask":
+		vars = cmd.Ask(command[1:], vars)
+		break
 	}
 }

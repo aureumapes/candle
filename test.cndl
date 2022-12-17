@@ -1,2 +1,5 @@
 set a to Hello World
-say a
+sayln a
+ask name What is your name?
+say Welcome,
+say name
