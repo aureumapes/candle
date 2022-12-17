@@ -1,4 +1,5 @@
-/HotDogLang
 .idea/
 .gitignore
 build
+build.sh
+token
