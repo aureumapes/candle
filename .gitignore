@@ -1,5 +1,4 @@
 .idea/
-.gitignore
-build
+build/
 build.sh
 token
