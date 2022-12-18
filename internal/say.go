@@ -1,14 +1,20 @@
 package internal
 
-import "strings"
+import (
+	"Candle/util"
+	"strings"
+)
 
 func Say(args []string, vars map[string]string) {
 	_, variableExists := vars[args[0]]
-	if variableExists {
+	if strings.HasPrefix(args[0], "+") {
+		print(strings.Replace(strings.Join(args, " "), "+", "", 1))
+		return
+	} else if variableExists {
 		print(vars[args[0]])
-	} else {
-		print(strings.Join(args, " "))
+		return
 	}
+	util.PrintError("Unknown variable \"" + args[0] + "\"")
 }
 
 func Sayln(args []string, vars map[string]string) {
