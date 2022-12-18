@@ -1,7 +1,7 @@
 package main
 
 import (
-	"Candle/cmd"
+	"Candle/internal"
 	"bufio"
 	"os"
 	"strings"
@@ -48,16 +48,12 @@ func Execute(rawCommand string) {
 	command := strings.Split(rawCommand, " ")
 	switch command[0] {
 	case "say":
-		cmd.Say(command[1:], vars)
-		break
+		internal.Say(command[1:], vars)
 	case "sayln":
-		cmd.Sayln(command[1:], vars)
-		break
+		internal.Sayln(command[1:], vars)
 	case "set":
-		vars = cmd.Set(command[1:], vars)
-		break
+		vars = internal.Set(command[1:], vars)
 	case "ask":
-		vars = cmd.Ask(command[1:], vars)
-		break
+		vars = internal.Ask(command[1:], vars)
 	}
 }
