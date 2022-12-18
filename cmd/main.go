@@ -2,6 +2,7 @@ package main
 
 import (
 	"Candle/internal"
+
 	"bufio"
 	"os"
 	"strings"
@@ -55,5 +56,7 @@ func Execute(rawCommand string) {
 		vars = internal.Set(command[1:], vars)
 	case "ask":
 		vars = internal.Ask(command[1:], vars)
+	case "add":
+		vars = internal.Add(command[1:], vars)
 	}
 }
