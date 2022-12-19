@@ -27,7 +27,7 @@ func main() {
 
 	for fileScanner.Scan() {
 		command := fileScanner.Text()
-		if strings.HasPrefix(command, "#") || strings.HasPrefix(command, "//") || command == "" {
+		if strings.HasPrefix(command, "//") || command == "" {
 			continue
 		} else {
 			program = append(program, command)
@@ -58,5 +58,11 @@ func Execute(rawCommand string) {
 		vars = internal.Ask(command[1:], vars)
 	case "add":
 		vars = internal.Add(command[1:], vars)
+	case "sub":
+		vars = internal.Sub(command[1:], vars)
+	case "mul":
+		vars = internal.Mul(command[1:], vars)
+	case "div":
+		vars = internal.Div(command[1:], vars)
 	}
 }
