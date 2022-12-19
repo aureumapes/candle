@@ -2,7 +2,6 @@ package main
 
 import (
 	"Candle/internal"
-
 	"bufio"
 	"os"
 	"strings"
@@ -37,32 +36,7 @@ func main() {
 
 	pos = 0
 	for pos < len(program) {
-		Execute(program[pos])
+		vars = internal.Execute(program[pos], vars)
 		pos++
-	}
-}
-
-func Execute(rawCommand string) {
-	if rawCommand == "exit" {
-		os.Exit(1)
-	}
-	command := strings.Split(rawCommand, " ")
-	switch command[0] {
-	case "say":
-		internal.Say(command[1:], vars)
-	case "sayln":
-		internal.Sayln(command[1:], vars)
-	case "set":
-		vars = internal.Set(command[1:], vars)
-	case "ask":
-		vars = internal.Ask(command[1:], vars)
-	case "add":
-		vars = internal.Add(command[1:], vars)
-	case "sub":
-		vars = internal.Sub(command[1:], vars)
-	case "mul":
-		vars = internal.Mul(command[1:], vars)
-	case "div":
-		vars = internal.Div(command[1:], vars)
 	}
 }
