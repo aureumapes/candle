@@ -1,3 +1,24 @@
-set a to 5
+// Test set
+set a to 9
+sayln a
+
+// Test ask
+ask a What is a?
+sayln a
+
+// Test add (15)
+set a to 10
 add a 5
-say a
+sayln a
+
+// Test sub (10)
+sub a 5
+sayln a
+
+// Test div (2)
+div a 5
+sayln a
+
+// Test mul (10)
+mul a 5
+sayln a
