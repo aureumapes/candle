@@ -43,6 +43,11 @@ These instructions do the same as add but instead calculate the difference, prod
 <br />
 Example: `sub a 8`, `mul a 5`, `div a 2`
 
+### If
+WIth if you can execute a command if a variable is ==, !=, <=, >=, < or > to another variable or other value
+<br />
+Example: `if a == 9 sayln +a is equal to 9`
+
 ## ⌛ Examples
 You can find examples in the [examples](https://github.com/Amiraxoba/Candle/tree/v2/examples) folder.
 
