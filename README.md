@@ -51,5 +51,8 @@ Example: `if a == 9 sayln +a is equal to 9`
 ## ⌛ Examples
 You can find examples in the [examples](https://github.com/Amiraxoba/Candle/tree/v2/examples) folder.
 
+## 📝 Implementations
+* [Go](https://github.com/Amiraxoba/Candle/tree/go)(The original Implementation)
+
 ## 🚢 Connect with us
 We coordinate the development through our [Discord](https://discord.gg/sFaZtaSX9j).
