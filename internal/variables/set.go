@@ -1,4 +1,4 @@
-package internal
+package variables
 
 import (
 	"Candle/util"

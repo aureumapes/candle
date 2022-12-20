@@ -1,6 +1,8 @@
 package internal
 
 import (
+	"Candle/internal/calc"
+	"Candle/internal/variables"
 	"os"
 	"strings"
 )
@@ -16,17 +18,17 @@ func Execute(rawCommand string, vars map[string]string) map[string]string {
 	case "sayln":
 		Sayln(command[1:], vars)
 	case "set":
-		vars = Set(command[1:], vars)
+		vars = variables.Set(command[1:], vars)
 	case "ask":
-		vars = Ask(command[1:], vars)
+		vars = variables.Ask(command[1:], vars)
 	case "add":
-		vars = Add(command[1:], vars)
+		vars = calc.Add(command[1:], vars)
 	case "sub":
-		vars = Sub(command[1:], vars)
+		vars = calc.Sub(command[1:], vars)
 	case "mul":
-		vars = Mul(command[1:], vars)
+		vars = calc.Mul(command[1:], vars)
 	case "div":
-		vars = Div(command[1:], vars)
+		vars = calc.Div(command[1:], vars)
 	case "if":
 		If(command[1:], vars)
 	}
