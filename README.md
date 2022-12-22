@@ -66,7 +66,7 @@ Example:
 ⌛ Examples
 ----------
 
-You can find full example files in the [examples](https://github.com/Amiraxoba/Candle/tree/v2/examples) folder.
+You can find full example files in the [examples](https://github.com/Amiraxoba/Candle/tree/go/examples) folder.
 
 📝 Implementations In differnet Languages
 -----------------------------------------
