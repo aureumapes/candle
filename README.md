@@ -68,7 +68,7 @@ Example:
 
 You can find full example files in the [examples](https://github.com/Amiraxoba/Candle/tree/go/examples) folder.
 
-📝 Implementations In differnet Languages
+📝 Implementations In different Languages
 -----------------------------------------
 
 *   [Go](https://github.com/Amiraxoba/Candle/tree/go) (The original Implementation)
