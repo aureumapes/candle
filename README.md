@@ -66,12 +66,12 @@ Example:
 ⌛ Examples
 ----------
 
-You can find full example files in the [examples](https://github.com/Amiraxoba/Candle/tree/go/examples) folder.
+You can find full example files in the [examples](https://github.com/Amiraxoba/Candle/tree/master/examples) folder.
 
 📝 Implementations In different Languages
 -----------------------------------------
 
-*   [Go](https://github.com/Amiraxoba/Candle/tree/go) (The original Implementation)
+*   [Go](https://github.com/Amiraxoba/Candle/) (The original Implementation)
 
 🚢 Connect with us
 ------------------
