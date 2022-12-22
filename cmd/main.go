@@ -36,7 +36,8 @@ func main() {
 
 	pos = 0
 	for pos < len(program) {
-		vars = internal.Execute(program[pos], vars)
+		newProgram := strings.Split(strings.Join(program, "\n"), program[pos])[1]
+		vars, funcs = internal.Execute(program[pos], vars, funcs, strings.Split(newProgram, "\n"))
 		pos++
 	}
 }

@@ -7,12 +7,14 @@ import (
 	"strings"
 )
 
-func Execute(rawCommand string, vars map[string]string) map[string]string {
+func Execute(rawCommand string, vars map[string]string, funcs map[string][]string, funcBody []string) (map[string]string, map[string][]string) {
 	if rawCommand == "exit" {
 		os.Exit(1)
 	}
 	command := strings.Split(rawCommand, " ")
 	switch command[0] {
+	case "exit":
+		os.Exit(0)
 	case "say":
 		Say(command[1:], vars)
 	case "sayln":
@@ -30,7 +32,13 @@ func Execute(rawCommand string, vars map[string]string) map[string]string {
 	case "div":
 		vars = calc.Div(command[1:], vars)
 	case "if":
-		If(command[1:], vars)
+		vars, funcs = If(command[1:], vars, funcs)
+	case "function":
+		funcs = CreateFunction(command[1:], funcs, funcBody)
+	case "end":
+		break
+	default:
+		vars, funcs = ExecuteFunction(command, vars, funcs)
 	}
-	return vars
+	return vars, funcs
 }
