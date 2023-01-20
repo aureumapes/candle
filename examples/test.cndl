@@ -1,1 +1,3 @@
-ask a What is pi?
+function hi
+sayln +Hi
+end
