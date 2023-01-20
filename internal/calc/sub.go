@@ -1,7 +1,7 @@
 package calc
 
 import (
-	"github.com/Amiraxoba/Candle/util"
+	"github.com/Amiraxoba/candle/util"
 	"strconv"
 )
 

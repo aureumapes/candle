@@ -1,8 +1,8 @@
 package internal
 
 import (
-	"github.com/Amiraxoba/Candle/internal/calc"
-	"github.com/Amiraxoba/Candle/internal/variables"
+	"github.com/Amiraxoba/candle/internal/calc"
+	"github.com/Amiraxoba/candle/internal/variables"
 	"os"
 	"strings"
 )
@@ -37,6 +37,8 @@ func Execute(rawCommand string, vars map[string]string, funcs map[string][]strin
 		funcs = CreateFunction(command[1:], funcs, funcBody)
 	case "end":
 		break
+	case "read":
+		vars = variables.Read(command[1:], vars)
 	default:
 		vars, funcs = ExecuteFunction(command, vars, funcs)
 	}

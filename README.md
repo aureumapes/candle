@@ -20,7 +20,7 @@ Candle features a variety of instructions for you to use in your programs
 
 ### Set
 
-The set instruction allows you to set a value of a variable. If the variable name wasn't previously defined a new variable will be created, otherwise, the value of the variable will be overridden by the new one. The set instruction allows for inserting a variable as a value. If you want to set an string as the value, add the prefix `+` to the value. Variable names must follow the RegEx `[a-z]+[0-9]*`  
+The set instruction allows you to set a value of a variable. If the variable name wasn't previously defined a new variable will be created, otherwise, the value of the variable will be overridden by the new one. The set instruction allows for inserting a variable as a value. If you want to set an string as the value, add the prefix `+` to the value. Variable names must follow the RegEx `[a-z][a-z|0-9]*`  
 Example: `set pi to 3.14`, `set x to y`, `set hi to +Hello World`
 
 ### Say
@@ -37,6 +37,10 @@ Example: `sayln x`, `sayln +Hello World`
 
 Wanted to ask for input. The `ask` instruction is your go-to option. It follows the syntax `ask <variable> <message>` where the variable is the variable name to store the input in (if not available a new one will be created) and the message is the message asked in the console.  
 Example: `ask pi What is pi equal to?`
+
+### Read
+Read saves the content of a file into a variable<br/>
+Example: `read main.cndl cat`
 
 ### Add
 

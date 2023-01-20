@@ -1,3 +1,3 @@
-module github.com/Amiraxoba/Candle
+module github.com/Amiraxoba/candle
 
 go 1.19
