@@ -1,3 +1,2 @@
-function hi
-sayln +Hi
-end
+import hello-world
+hello-world

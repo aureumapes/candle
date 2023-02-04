@@ -39,6 +39,8 @@ func Execute(rawCommand string, vars map[string]string, funcs map[string][]strin
 		break
 	case "read":
 		vars = variables.Read(command[1:], vars)
+	case "import":
+		funcs = Import(command[1:], funcs)
 	default:
 		vars, funcs = ExecuteFunction(command, vars, funcs)
 	}

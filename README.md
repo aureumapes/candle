@@ -67,10 +67,16 @@ Example:
 `end` <br />
 `main`
 
+### Import
+`import` reads another candle file and writes it into a function in your current program<br/>
+Make sure to give the File name without the extension(.cndl)<br/>
+Examples:
+`import hello-world`
+
 ⌛ Examples
 ----------
 
-You can find full example files in the [examples](https://github.com/Amiraxoba/Candle/tree/master/examples) folder.
+You can find full example files in the [examples](https://github.com/Amiraxoba2/candle/tree/master/examples) folder.
 
 📝 Implementations In different Languages
 -----------------------------------------
