@@ -2,7 +2,7 @@ package main
 
 import (
 	"bufio"
-	"github.com/Amiraxoba/candle/internal"
+	"github.com/Amiraxoba2/candle/internal"
 	"os"
 	"strings"
 )

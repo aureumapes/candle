@@ -2,7 +2,7 @@ package variables
 
 import (
 	"errors"
-	"github.com/Amiraxoba/candle/util"
+	"github.com/Amiraxoba2/candle/util"
 	"os"
 )
 

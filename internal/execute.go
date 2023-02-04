@@ -1,8 +1,8 @@
 package internal
 
 import (
-	"github.com/Amiraxoba/candle/internal/calc"
-	"github.com/Amiraxoba/candle/internal/variables"
+	"github.com/Amiraxoba2/candle/internal/calc"
+	"github.com/Amiraxoba2/candle/internal/variables"
 	"os"
 	"strings"
 )

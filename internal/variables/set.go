@@ -1,7 +1,7 @@
 package variables
 
 import (
-	"github.com/Amiraxoba/candle/util"
+	"github.com/Amiraxoba2/candle/util"
 	"regexp"
 	"strings"
 )
