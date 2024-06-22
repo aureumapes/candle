@@ -1,7 +1,7 @@
 package internal
 
 import (
-	"github.com/Amiraxoba2/candle/util"
+	"github.com/aureumapes/candle/util"
 	"strings"
 )
 

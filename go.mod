@@ -1,3 +1,3 @@
-module github.com/Amiraxoba2/candle
+module github.com/aureumapes/candle
 
-go 1.19
+go 1.21
