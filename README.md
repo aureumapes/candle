@@ -13,6 +13,20 @@ Candle is a simple esoteric research programing language. Built using [Go](https
 *   Comments, introduced with `//`, only working in a line
 *   [Functions](#functions)
 
+📩 Installation
+------------
+### Arch based Distos
+Use a aur-helper of your choice, I use yay:
+`yay -S candle`
+OR of course build it manually:
+`git clone https://aur.archlinux.org/candle.git && cd candle && makepkg -si`
+
+### Other Distors
+1. Download the repo: `git clone https://github.com/aureumapes/candle.git`
+2. Build the source: `cd candle && go build`
+3. Copy the candle-binary where you can execute it
+
+
 📎 Instructions
 ---------------
 
