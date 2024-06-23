@@ -14,6 +14,10 @@ var pos int
 
 func main() {
 	args := os.Args[1:]
+	if args[0] == "version"{
+		println(version)
+		os.Exit(0);
+	}
 	if len(args) < 1 {
 		panic("Please make sure to use a Filename as an argument!")
 	}
