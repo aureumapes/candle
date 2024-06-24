@@ -1,5 +1,5 @@
 # Get the version.
-version=`git describe --tags --long`
+version=`git describe --tags --abbrev=0`
 # Write out the package.
 cat << EOF > version_linux.go
 package main
