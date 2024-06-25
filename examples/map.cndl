@@ -1,0 +1,5 @@
+set map to : key 435453 name aureumapes
+say +Key:
+sayln map.key
+say +Name:
+sayln map.name

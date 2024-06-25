@@ -87,6 +87,14 @@ Make sure to give the File name without the extension(.cndl)<br/>
 Examples:
 `import hello-world`
 
+### Maps
+Maps are not indicated via an keyword but are a special datatype, which can help organize values more readable<br>
+They are made by using set this way:<br>
+`set <name> to : <key1> <var1> <key2> <var2> ...`<br>
+They are virtually infinitely big.<br>
+Values are stored like this in the variable-stack:
+`<map-name>.<var-key>` [Examples](examples/map.cndl)
+
 ⌛ Examples
 ----------
 
