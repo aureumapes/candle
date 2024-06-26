@@ -35,6 +35,8 @@ func Execute(rawCommand string, vars map[string]string, funcs map[string][]strin
 		vars, funcs = If(command[1:], vars, funcs)
 	case "function":
 		funcs = CreateFunction(command[1:], funcs, funcBody)
+	case "variables":
+		variables.Variables(vars)
 	case "end":
 		break
 	case "read":
