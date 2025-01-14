@@ -1,6 +1,7 @@
 set i to 10
 function loop1
 sayln i
+sayln +Hello World, how are ya?
 if i == 0 exit
 sub i 1
 loop1
